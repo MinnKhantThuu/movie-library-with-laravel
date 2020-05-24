@@ -77,3 +77,47 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Movie Library
+
+
+- roles and permission
+- image uploading
+- Eloquent: Relationships
+  - One To Many
+
+## Dependencies and Plugins
+
+- [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
+- [AdminLTE3](https://adminlte.io/themes/v3/)
+
+## Installation
+
+- git clone
+- composer install
+- cp .env.example .env
+- php artisan key:generate
+- php artisan migrate --seed
+- php artisan serve --port=4500
+
+The site will run localhost:4500
+
+## Default Users
+
+```cmd
+// Admin
+username - admin@gmail.com
+password - 123123123
+
+// Manager
+username - manager@gmail.com
+password - 123123123
+
+// Editor
+username - editor@gmail.com
+password - 123123123
+
+// Tester (banned)
+username - tester@gmail.com
+password - 123123123
+```
